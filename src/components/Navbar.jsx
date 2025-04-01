@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
               <Leaf className="h-8 w-8 text-primary-500" />
-              <span className="font-poppins font-bold text-xl text-gray-800">EcoRecycle</span>
+              <span className="font-poppins font-bold text-xl text-gray-800">E-WasteMate</span>
             </Link>
           </div>
           
