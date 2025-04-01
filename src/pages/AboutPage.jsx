@@ -1,0 +1,189 @@
+
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { Users, Award, Target, Globe } from 'lucide-react';
+
+const AboutPage = () => {
+  const teamMembers = [
+    {
+      name: "Alex Johnson",
+      role: "AI Specialist",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+      bio: "Alex specializes in machine learning and computer vision, developing the core AI technology that powers our e-waste classification system."
+    },
+    {
+      name: "Samantha Cruz",
+      role: "Environmental Scientist",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+      bio: "With a PhD in Environmental Science, Samantha ensures our recommendations are based on the latest research in sustainable waste management."
+    },
+    {
+      name: "Michael Lee",
+      role: "Frontend Developer",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+      bio: "Michael brings over 8 years of experience in creating intuitive user interfaces that make complex technologies accessible to everyone."
+    },
+    {
+      name: "Priya Patel",
+      role: "Backend Engineer",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+      bio: "Priya architects our robust backend systems, ensuring the platform can scale while maintaining reliability and performance."
+    }
+  ];
+  
+  const values = [
+    {
+      icon: Globe,
+      title: "Environmental Impact",
+      description: "We're committed to reducing e-waste's environmental footprint through education and accessible technology."
+    },
+    {
+      icon: Target,
+      title: "Innovation",
+      description: "We continuously push the boundaries of what's possible in waste management through cutting-edge AI."
+    },
+    {
+      icon: Award,
+      title: "Accuracy",
+      description: "Our recommendations are based on scientific research and industry best practices for e-waste management."
+    },
+    {
+      icon: Users,
+      title: "Accessibility",
+      description: "We design our platform to be user-friendly and accessible to everyone, regardless of technical knowledge."
+    }
+  ];
+  
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      
+      <div className="hero-gradient py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl font-bold font-poppins text-gray-900 mb-4">
+            About EcoRecycle
+          </h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Our mission is to make e-waste recycling accessible, informed, and impactful through technology.
+          </p>
+        </div>
+      </div>
+      
+      <div className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold font-poppins text-gray-900 mb-6">
+              Our Story
+            </h2>
+            <p className="text-gray-600">
+              EcoRecycle was founded in 2023 by a team of environmental scientists, AI specialists, and software 
+              engineers united by a common concern: the rapidly growing global e-waste crisis.
+            </p>
+            <p className="text-gray-600">
+              We recognized that while the environmental impact of e-waste is severe, many people lack access to 
+              information about proper disposal methods or aren't aware of the value that can be recovered from 
+              their old electronics.
+            </p>
+            <p className="text-gray-600">
+              Our solution combines artificial intelligence with environmental science to create a platform that 
+              not only educates users about e-waste but provides personalized guidance on how to recycle their 
+              specific electronic devices responsibly.
+            </p>
+          </div>
+          
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold font-poppins text-gray-900 mb-8 text-center">
+              Our Values
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {values.map((value, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow">
+                  <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center mb-4">
+                    <value.icon className="h-6 w-6 text-primary-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{value.title}</h3>
+                  <p className="text-gray-600">{value.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div className="mt-16">
+            <h2 className="text-3xl font-bold font-poppins text-gray-900 mb-8 text-center">
+              Meet Our Team
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {teamMembers.map((member, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                  <div className="h-48 overflow-hidden">
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover transition-transform hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
+                    <p className="text-sm text-primary-600 font-medium mb-3">{member.role}</p>
+                    <p className="text-gray-600 text-sm">{member.bio}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div className="mt-16">
+            <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
+              <h2 className="text-2xl font-bold font-poppins text-gray-900 mb-4">
+                Our Technology
+              </h2>
+              <p className="text-gray-600 mb-6">
+                At the core of our platform is a sophisticated AI system trained on thousands of e-waste images and 
+                data points. This technology enables us to:
+              </p>
+              <ul className="space-y-3 text-gray-600">
+                <li className="flex items-start">
+                  <span className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-2 flex-shrink-0">
+                    <span className="text-primary-600 text-xs font-medium">1</span>
+                  </span>
+                  <span>
+                    <strong>Classify e-waste</strong> into detailed categories based on visual recognition
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-2 flex-shrink-0">
+                    <span className="text-primary-600 text-xs font-medium">2</span>
+                  </span>
+                  <span>
+                    <strong>Identify components</strong> that need special handling (like batteries or screens)
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-2 flex-shrink-0">
+                    <span className="text-primary-600 text-xs font-medium">3</span>
+                  </span>
+                  <span>
+                    <strong>Provide personalized recommendations</strong> for recycling based on device type and user location
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-2 flex-shrink-0">
+                    <span className="text-primary-600 text-xs font-medium">4</span>
+                  </span>
+                  <span>
+                    <strong>Educate users</strong> about the environmental impact of their specific e-waste
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <Footer />
+    </div>
+  );
+};
+
+export default AboutPage;
