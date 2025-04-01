@@ -7,28 +7,28 @@ import { Users, Award, Target, Globe } from 'lucide-react';
 const AboutPage = () => {
   const teamMembers = [
     {
-      name: "Alex Johnson",
-      role: "AI Specialist",
+      name: "Amit",
+      role: "ML Engineer",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
       bio: "Alex specializes in machine learning and computer vision, developing the core AI technology that powers our e-waste classification system."
     },
     {
-      name: "Samantha Cruz",
-      role: "Environmental Scientist",
+      name: "Sushmita",
+      role: "ML Engineer",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
       bio: "With a PhD in Environmental Science, Samantha ensures our recommendations are based on the latest research in sustainable waste management."
     },
     {
-      name: "Michael Lee",
-      role: "Frontend Developer",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-      bio: "Michael brings over 8 years of experience in creating intuitive user interfaces that make complex technologies accessible to everyone."
+      name: "Apurb",
+      role: "Frontend Engineer",
+      image: "https://res.cloudinary.com/dldakzbyp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1743529081/Picccccccc_u50mcz.jpg",
+      bio: "I am a passionate web developer with nearly 1.5 years of experience, specializing in the MERN stack. With a strong preference for React, I focus on building dynamic, scalable, and user-friendly web applications. I thrive on creating intuitive interfaces and leveraging the latest technologies to deliver high-quality, responsive digital solutions."
     },
     {
-      name: "Priya Patel",
+      name: "Abhilash",
       role: "Backend Engineer",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-      bio: "Priya architects our robust backend systems, ensuring the platform can scale while maintaining reliability and performance."
+      image: "https://res.cloudinary.com/dldakzbyp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1743530544/abhilash_TeamPic_ckkiu0.jpg",
+      bio: "I am a backend engineer with 1 year of experience, specializing in building scalable and efficient server-side applications using Node.js and Express. I focus on designing robust APIs, optimizing performance, and ensuring seamless data flow between the front and back end. Passionate about backend architecture, I enjoy solving complex problems and enhancing system efficiency."
     }
   ];
   
