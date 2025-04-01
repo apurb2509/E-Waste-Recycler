@@ -56,7 +56,7 @@ const HeroSection = () => {
             <img 
               src={heroImage}
               alt="E-waste recycling illustration" 
-              className="relative z-10 scale-y-[1.7] scale-x-[1.1]" 
+              className="relative z-10 scale-y-[1.7] scale-x-[1.2] scale-y-[1.4]" 
             />
           </div>
         </div>

@@ -15,7 +15,7 @@ const AboutPage = () => {
     {
       name: "Sushmita",
       role: "ML Engineer",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+      image: "https://res.cloudinary.com/dldakzbyp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1743533561/sushmita_pic_wklvro.jpg",
       bio: "With a PhD in Environmental Science, Samantha ensures our recommendations are based on the latest research in sustainable waste management."
     },
     {
