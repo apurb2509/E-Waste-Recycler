@@ -1,73 +1,30 @@
-# Welcome to your Lovable project
+# E-Waste Management Project
 
-## Project info
+## Overview
+E-waste (electronic waste) is one of the fastest-growing waste streams in the world. Our project aims to provide a sustainable and efficient solution for managing e-waste by promoting recycling, responsible disposal, and awareness about the impact of electronic waste on the environment.
 
-**URL**: https://lovable.dev/projects/5a57b33d-3a1e-4f04-81bc-64caa35da8fb
+## Features
+- **E-Waste Collection System**: Users can find nearby e-waste collection centers.
+- **E-Waste Recycling Information**: Provides details on how to properly recycle various electronic devices.
+- **Awareness Campaigns**: Educates users about the hazards of improper e-waste disposal and benefits of recycling.
+- **Incentive System**: Encourages users to recycle by offering rewards or discounts.
+- **Donation Platform**: Allows users to donate working electronics to those in need instead of discarding them.
 
-## How can I edit this code?
+## Tech Stack
+- **Frontend**: React.js, Next.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: Clerk 
+- **APIs**: Integration with Google Maps API for locating collection centers
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/5a57b33d-3a1e-4f04-81bc-64caa35da8fb) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+## Installation & Setup
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone https://github.com/apurb2509/E-Waste-Recycler.git
+cd E-Waste-Recycler
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Run the development server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/5a57b33d-3a1e-4f04-81bc-64caa35da8fb) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
