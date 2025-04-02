@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Upload } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import heroImage from '../assets/hero-image.png';
+import heroImage from '../assets/hero-image.webp';
 
 const HeroSection = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -51,12 +51,12 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="animate-float relative md:h-96 flex justify-center items-center mt-8 md:mt-0">
+          <div className="relative md:h-96 flex justify-center items-center mt-8 md:mt-0">
             <div className="absolute inset-0 bg-gradient-to-r from-primary-200/20 to-secondary-200/20 rounded-full blur-3xl"></div>
             <img 
-              src={heroImage} 
+              src={heroImage}
               alt="E-waste recycling illustration" 
-              className="relative z-10 max-h-full" 
+              className="relative z-10 scale-y-[1.7] scale-x-[1.2]" 
             />
           </div>
         </div>

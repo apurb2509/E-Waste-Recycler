@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Leaf className="h-6 w-6 text-primary-400" />
-              <span className="font-poppins font-bold text-xl">EcoRecycle</span>
+              <span className="font-poppins font-bold text-xl">E-WasteMate</span>
             </div>
             <p className="text-gray-400 text-sm mt-2">
               Making e-waste recycling accessible, efficient, and educational for everyone.
@@ -78,7 +78,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-12 pt-8">
           <p className="text-center text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} EcoRecycle. All rights reserved.
+            &copy; {new Date().getFullYear()} E-WasteMate. All rights reserved.
           </p>
         </div>
       </div>
