@@ -9,19 +9,19 @@ const AboutPage = () => {
     {
       name: "Amit",
       role: "ML Engineer",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-      bio: "Alex specializes in machine learning and computer vision, developing the core AI technology that powers our e-waste classification system."
+      image: "https://res.cloudinary.com/dldakzbyp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1743579163/amittt_ehn9nl.jpg",
+      bio: "I have nearly 1 year experience working with Python and its data-focused libraries, including NumPy, Pandas, Matplotlib, and Seaborn, for analysis and visualization. I am proficient in SQL for database management and have a strong foundation in machine learning with TensorFlow. Additionally, I specialize in backend development using Flask and FastAPI to build efficient and scalable web applications."
     },
     {
       name: "Sushmita",
       role: "ML Engineer",
-      image: "https://res.cloudinary.com/dldakzbyp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1743533561/sushmita_pic_wklvro.jpg",
-      bio: "With a PhD in Environmental Science, Samantha ensures our recommendations are based on the latest research in sustainable waste management."
+      image: "https://res.cloudinary.com/dldakzbyp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1743575493/sushmitapic_flpcmb.jpg",
+      bio: "I am a highly motivated Python enthusiast with 8-9 months of hands-on experience in programming. During this time, I have gained a strong foundation in Python’s core concepts, data structures, and libraries while working on projects in web development, data analysis, and machine learning. I am committed to continuously improving my skills and building efficient, scalable solutions through innovative problem-solving."
     },
     {
       name: "Apurb",
-      role: "Frontend Engineer",
-      image: "https://res.cloudinary.com/dldakzbyp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1743529081/Picccccccc_u50mcz.jpg",
+      role: "Frontend Developer",
+      image: "https://res.cloudinary.com/dldakzbyp/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1743579637/apurbbbbb_rwelun.jpg",
       bio: "I am a passionate web developer with nearly 1.5 years of experience, specializing in the MERN stack. With a strong preference for React, I focus on building dynamic, scalable, and user-friendly web applications. I thrive on creating intuitive interfaces and leveraging the latest technologies to deliver high-quality, responsive digital solutions."
     },
     {
