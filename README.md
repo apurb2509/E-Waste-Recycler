@@ -14,7 +14,7 @@ E-waste (electronic waste) is one of the fastest-growing waste streams in the wo
 - **Frontend**: React.js, Next.js, Tailwind CSS
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Authentication**: Clerk (if required)
+- **Authentication**: Clerk 
 - **APIs**: Integration with Google Maps API for locating collection centers
 
 ## Installation & Setup
