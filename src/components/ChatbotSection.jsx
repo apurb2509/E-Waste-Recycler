@@ -218,7 +218,6 @@ import React, { useState } from 'react';
 import { Send, Bot, User, ChevronRight } from 'lucide-react';
 import { generateContent } from './model'; 
 
-
 const ChatbotSection = () => {
   const [messages, setMessages] = useState([
     {
@@ -237,7 +236,7 @@ const ChatbotSection = () => {
   const [isTyping, setIsTyping] = useState(false);
   
   const handleSendMessage = async () => {
-    if (inputValue.trim() === '') return;
+    if (inputValue.trim() === '') return;  // Prevent empty messages
     
     const newUserMessage = {
       id: Date.now(),
@@ -264,10 +263,18 @@ const ChatbotSection = () => {
       setIsTyping(false);
     }
   };
-  
+
   const handleOptionClick = (option) => {
     setInputValue(option);
     handleSendMessage();
+  };
+
+  // ✅ Handle pressing "Enter" to send a message
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();  // Prevent default form submission
+      handleSendMessage();
+    }
   };
 
   return (
@@ -347,6 +354,7 @@ const ChatbotSection = () => {
                   className="flex-1 border border-gray-300 rounded-l-lg px-4 py-2"
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
+                  onKeyDown={handleKeyDown}  // ✅ Detect Enter key press
                 />
                 <button onClick={handleSendMessage} className="bg-green-600 text-white px-4 py-2 rounded-r-lg">
                   <Send className="h-5 w-5" />
@@ -356,6 +364,7 @@ const ChatbotSection = () => {
                 Powered by Gemini AI.
               </p>
             </div>
+
           </div>
         </div>
       </div>
