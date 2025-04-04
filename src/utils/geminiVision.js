@@ -178,3 +178,9 @@ export const analyzeImageWithGemini = async ({ base64Data, mimeType }) => {
     return "Failed to analyze image. Please check your API key and try again.";
   }
 };
+
+
+
+
+
+
