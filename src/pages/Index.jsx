@@ -1,12 +1,12 @@
-import React from "react";
+import React, {lazy, Suspense} from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import StatsSection from "../components/StatsSection";
 import CallToAction from "../components/CallToAction";
 const ClassifySection = lazy(() => import("../components/ClassifySection"));
-const EducationalSection = lazy(() => import("../components/ClassifySection"));
-const ChatbotSection = lazy(() => import("../components/ClassifySection"));
+const EducationalSection = lazy(() => import("../components/EducationalSection"));
+const ChatbotSection = lazy(() => import("../components/ChatbotSection"));
 
 const Index = () => {
   return (
@@ -16,10 +16,10 @@ const Index = () => {
         <HeroSection />
         <StatsSection />
         <Suspense fallback={<div>Loading...</div>}>
-          <ClassifySection />
           <EducationalSection />
           <ChatbotSection />
         </Suspense>
+        <ClassifySection />
 
         <CallToAction />
       </main>

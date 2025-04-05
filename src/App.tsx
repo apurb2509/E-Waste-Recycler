@@ -4,11 +4,11 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
-import ClassifyPage from "./pages/ClassifyPage";
-import LearnPage from "./pages/LearnPage";
-import AboutPage from "./pages/AboutPage";
+import Index from "./pages/Index.jsx";
+import NotFound from "./pages/NotFound.jsx";
+import ClassifyPage from "./pages/ClassifyPage.jsx";
+import LearnPage from "./pages/LearnPage.jsx";
+import AboutPage from "./pages/AboutPage.jsx";
 
 const queryClient = new QueryClient();
 
