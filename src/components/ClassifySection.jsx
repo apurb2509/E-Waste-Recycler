@@ -86,7 +86,7 @@ const ClassifySection = () => {
     <div className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl font-bold font-poppins text-gray-900 sm:text-4xl mb-4">
+          <h2 className="text-3xl font-bold font-poppins text-gray-800 sm:text-4xl mb-4">
             Classify Your E-Waste
           </h2>
           <p className="text-gray-600">
