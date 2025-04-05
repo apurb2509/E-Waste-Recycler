@@ -62,7 +62,7 @@ const HeroSection = () => {
               <span className="text-white cursor-pointer" 
                 style={{
                   animation: 'none',
-                  textShadow: '0 0 5px #fff',
+                  // textShadow: '0 0 5px #fff',
                   fontWeight: '700',
                   letterSpacing: '0.5px',
                   transition: 'all 0.3s ease',

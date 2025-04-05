@@ -1,13 +1,12 @@
-
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import HeroSection from '../components/HeroSection';
-import ClassifySection from '../components/ClassifySection';
-import StatsSection from '../components/StatsSection';
-import EducationalSection from '../components/EducationalSection';
-import ChatbotSection from '../components/ChatbotSection';
-import CallToAction from '../components/CallToAction';
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import HeroSection from "../components/HeroSection";
+import StatsSection from "../components/StatsSection";
+import CallToAction from "../components/CallToAction";
+const ClassifySection = lazy(() => import("../components/ClassifySection"));
+const EducationalSection = lazy(() => import("../components/ClassifySection"));
+const ChatbotSection = lazy(() => import("../components/ClassifySection"));
 
 const Index = () => {
   return (
@@ -16,9 +15,12 @@ const Index = () => {
       <main className="flex-grow">
         <HeroSection />
         <StatsSection />
-        <ClassifySection />
-        <EducationalSection />
-        <ChatbotSection />
+        <Suspense fallback={<div>Loading...</div>}>
+          <ClassifySection />
+          <EducationalSection />
+          <ChatbotSection />
+        </Suspense>
+
         <CallToAction />
       </main>
       <Footer />
