@@ -1,0 +1,16 @@
+runtime: nodejs22  # Use the latest supported Node.js version
+
+handlers:
+  # Serve static assets (JavaScript, CSS, images, etc.) from the /dist/assets folder
+  - url: /assets
+    static_dir: dist/assets
+
+  # Serve static files directly from dist (like favicon, index.html, etc.)
+  - url: /(.*\.(js|css|ico|png|jpg|jpeg|svg|json|txt|html))$
+    static_files: dist/\1
+    upload: dist/(.*\.(js|css|ico|png|jpg|jpeg|svg|json|txt|html))$
+
+  # Catch-all handler to serve index.html for client-side routing (SPA behavior)
+  - url: /.*
+    static_files: dist/index.html
+    upload: dist/index.html
