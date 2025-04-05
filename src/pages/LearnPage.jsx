@@ -1,10 +1,10 @@
 
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import EducationalSection from '../components/EducationalSection';
 import StatsSection from '../components/StatsSection';
-import ChatbotSection from '../components/ChatbotSection';
+const EducationalSection = lazy(() => import("../components/EducationalSection"));
+const ChatbotSection = lazy(() => import("../components/ChatbotSection"));
 
 const LearnPage = () => {
   return (
@@ -73,10 +73,14 @@ const LearnPage = () => {
         </div>
       </div>
       <div className="bg-gray-50">
-        <EducationalSection />
+      <Suspense fallback={<div>Loading...</div>}>
+          <EducationalSection />
+        </Suspense>
       </div>
       <StatsSection />
-      <ChatbotSection />
+      <Suspense fallback={<div>Loading...</div>}>
+          <ChatbotSection />
+        </Suspense>
       <Footer />
     </div>
   );

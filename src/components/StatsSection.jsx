@@ -115,7 +115,7 @@ const StatsSection = () => {
         ))}
       </div>
 
-      <style jsx>{`
+      <style>{`
         .animate-line {
           animation: lineAnimation 0.3s ease-out;
         }
