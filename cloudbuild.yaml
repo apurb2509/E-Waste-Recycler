@@ -29,9 +29,11 @@ options:
   logging: CLOUD_LOGGING_ONLY
 
 steps:
-  # Step 1: Install dependencies
   - name: 'gcr.io/cloud-builders/npm'
-    args: ['install']
+    args: ['install', '--legacy-peer-deps']  # 👈 Add this flag
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+  # ... rest of your steps
 
   # Step 2: Build React app
   - name: 'gcr.io/cloud-builders/npm'
