@@ -174,3 +174,10 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+
+
+
+body::after, .watermark, .lovable-watermark {
+  display: none !important;
+}
