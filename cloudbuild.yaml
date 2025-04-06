@@ -22,25 +22,21 @@
 #   logging: CLOUD_LOGGING_ONLY  # or REGIONAL_USER_OWNED_BUCKET
   
 
+
+
+
 options:
-  logging: CLOUD_LOGGING_ONLY  # This is the critical fix
+  logging: CLOUD_LOGGING_ONLY  # Ensures logs go to Cloud Logging
 
 steps:
-  # Install and build React
+  # Step 1: Install dependencies
   - name: 'gcr.io/cloud-builders/npm'
     args: ['install']
+
+  # Step 2: Build React app
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
 
-  # Choose ONE deployment option below (A, B, or C)
-  ## Option A: App Engine (uncomment if using this)
-  # - name: 'gcr.io/cloud-builders/gcloud'
-  #   args: ['app', 'deploy']
-
-  ## Option B: Cloud Run (uncomment if using this)
-  # - name: 'gcr.io/cloud-builders/gcloud'
-  #   args: ['run', 'deploy', 'your-service-name', '--image', 'gcr.io/$PROJECT_ID/your-image', '--region', 'us-central1']
-
-  ## Option C: Compute Engine (uncomment if using this)
+  # Step 3: Deploy to GCS (Compute Engine/VM)
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: ['-m', 'rsync', '-r', 'build/', 'gs://your-bucket-name']
+    args: ['-m', 'rsync', '-r', 'build/', 'gs://e-wastemate']  # Use your new bucket
