@@ -2,7 +2,7 @@
 
 ## Overview
 **E-WasteMate**
-E-waste (electronic waste) is one of the fastest-growing waste streams in the world. Our project, E-WasteMate, aims to provide a sustainable and efficient solution for managing e-waste by promoting recycling, responsible disposal, and awareness about the impact of electronic waste on the environment.
+- E-waste (electronic waste) is one of the fastest-growing waste streams in the world. Our project, E-WasteMate, aims to provide a sustainable and efficient solution for managing e-waste by promoting recycling, responsible disposal, and awareness about the impact of electronic waste on the environment.
 
 ## Features
 - **E-Waste Collection System**: Users can find nearby e-waste collection centers.
