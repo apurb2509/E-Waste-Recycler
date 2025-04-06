@@ -1,0 +1,19 @@
+steps:
+  # Install dependencies and build React app
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+
+  # Deploy to your GCP service (choose one)
+  ## Option A: App Engine
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy']
+
+  ## Option B: Cloud Run
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['run', 'deploy', 'your-service-name', '--image', 'gcr.io/$PROJECT_ID/your-image', '--region', 'us-central1']
+
+  ## Option C: Compute Engine/VM (manual upload)
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'rsync', '-r', 'build/', 'gs://your-bucket-name']
